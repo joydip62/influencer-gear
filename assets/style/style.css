@@ -54,6 +54,49 @@ a {
   line-height: normal;
 }
 
+/* banner section style */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 150px;
+}
+.banner .banner-content {
+  width: 582px;
+}
+.banner .banner-content h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.banner .banner-content p {
+  font-weight: 600;
+  padding: 20px 0;
+}
+.banner .banner-content button {
+  color: #fff;
+  padding: 10px 24px;
+  font-weight: 700;
+  border: none;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+}
+.banner .banner-content button svg {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.banner .banner-image {
+  background-image: url("./../img/Circle\ design.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .banner-image img {
+    width: 100%;
+}
+
 /* media query style */
 
 /* mobile device */
@@ -66,23 +109,58 @@ a {
   .header nav ul {
     text-align: center;
   }
-  .header nav ul li{
+  .header nav ul li {
     margin-left: 25px;
   }
-  .header nav ul li:first-child{
+  .header nav ul li:first-child {
     margin-left: 0;
   }
 
+  /* banner section style */
+  .banner {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  .banner .banner-content {
+    width: 100%;
+    text-align: center;
+  }
+  .banner .banner-content h1 {
+    font-size: 28px;
+    line-height: normal;
+  }
+  .banner .banner-content p {
+    font-weight: 500;
+  }
+  .banner .banner-content button {
+    margin: auto;
+  }
+  .banner .banner-content button svg {
+    padding-left: 10px;
+    font-size: 16px;
+  }
 }
 
 /* medium device */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    /* header part */
+  /* header part */
   .header {
     padding: 20px;
   }
-  
+
+  /* banner section style */
+.banner {
+  padding: 20px;
 }
+
+.banner .banner-content h1 {
+  font-size: 38px;
+  line-height: normal;
+}
+.banner .banner-content p {
+  font-weight: 500;
+}
+
 
 /* large device */
 @media screen and (min-width: 993px) and (max-device-width: 1024px) {
