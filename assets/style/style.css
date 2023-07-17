@@ -25,8 +25,6 @@ h3 {
 a {
   text-decoration: none;
 }
-.section-title {
-}
 
 /* local style */
 
@@ -54,4 +52,38 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+/* media query style */
+
+/* mobile device */
+@media screen and (max-width: 767px) {
+  /* header part */
+  .header {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .header nav ul {
+    text-align: center;
+  }
+  .header nav ul li{
+    margin-left: 25px;
+  }
+  .header nav ul li:first-child{
+    margin-left: 0;
+  }
+
+}
+
+/* medium device */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* header part */
+  .header {
+    padding: 20px;
+  }
+  
+}
+
+/* large device */
+@media screen and (min-width: 993px) and (max-device-width: 1024px) {
 }
