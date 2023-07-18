@@ -8,6 +8,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -27,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1410px;
+  margin: 0 auto;
+}
 /* local style */
 
 /* header nav style */
@@ -102,8 +107,8 @@ a {
 .brand {
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
   flex-wrap: wrap;
   padding: 50px 150px;
   gap: 20px;
@@ -179,79 +184,4 @@ a {
   line-height: 143%;
   letter-spacing: 0.252px;
   width: 60%;
-}
-
-/* ======================================================================================================================================================================================================================================================================== */
-/* media query style */
-
-/* mobile device */
-@media screen and (max-width: 767px) {
-  /* header part */
-  .header {
-    padding: 20px;
-    flex-direction: column;
-  }
-  .header nav ul {
-    text-align: center;
-  }
-  .header nav ul li {
-    margin-left: 25px;
-  }
-  .header nav ul li:first-child {
-    margin-left: 0;
-  }
-
-  /* banner section style */
-  .banner {
-    flex-direction: column-reverse;
-    padding: 20px;
-  }
-  .banner .banner-content {
-    width: 100%;
-    text-align: center;
-  }
-  .banner .banner-content h1 {
-    font-size: 28px;
-    line-height: normal;
-  }
-  .banner .banner-content p {
-    font-weight: 500;
-  }
-  .banner .banner-content button {
-    margin: auto;
-  }
-  .banner .banner-content button svg {
-    padding-left: 10px;
-    font-size: 16px;
-  }
-
-  /* brand section style */
-  .brand {
-    padding: 50px 30px;
-  }
-}
-
-/* medium device */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  /* header part */
-  .header {
-    padding: 20px;
-  }
-
-  /* banner section style */
-  .banner {
-    padding: 20px;
-  }
-
-  .banner .banner-content h1 {
-    font-size: 38px;
-    line-height: normal;
-  }
-  .banner .banner-content p {
-    font-weight: 500;
-  }
-}
-
-/* large device */
-@media screen and (min-width: 993px) and (max-device-width: 1024px) {
 }
